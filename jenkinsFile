@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Introduction') {
+            steps {
+                echo 'This pipeline is for testing the pipeline functionality only'
+            }
+        }
+        stage('Build Stage') {
+            steps {
+                echo 'Building the module'
+            }
+        }
+        stage('Testing Stage') {
+            steps {
+                echo 'Testing the module'
+            }
+        }
+        stage('Deployment Stage') {
+            steps {
+                echo 'Deploying the module'
+            }
+        }
+        stage('Release Stage') {
+            steps {
+                echo 'Releasing the module'
+            }
+        }
+    }
+}
